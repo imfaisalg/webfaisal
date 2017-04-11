@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,24 +9,23 @@
     <meta name="author" content="">
     <link rel="icon" href="http://webfaisal.azurewebsites.net/Resources/Design/Icons/favicon.ico">
 
-    <title>Project Ethical Approval</title>
+    <title>Sign In</title>
 
     <!-- Bootstrap core CSS -->
-
     <link rel="stylesheet" href="http://webfaisal.azurewebsites.net/Resources/Design/Bootstrap/dist/css/bootstrap.css">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="http://webfaisal.azurewebsites.net/Resources/Design/Bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../../../Downloads/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href="http://webfaisal.azurewebsites.net/Resources/Design/CSS/signin.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
     <link href="http://webfaisal.azurewebsites.net/Resources/Design/CSS/navbar-fixed-top.css" rel="stylesheet">
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
     <script src="http://webfaisal.azurewebsites.net/Resources/Design/Bootstrap/assets/js/ie8-responsive-file-warning.js"></script>
     <![endif]-->
     <script src="http://webfaisal.azurewebsites.net/Resources/Design/Bootstrap/assets/js/ie-emulation-modes-warning.js"></script>
-
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,7 +34,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="http://webfaisal.azurewebsites.net/Resources/Design/CSS/appStyle.css">
-
 </head>
 
 <body>
@@ -77,23 +74,30 @@
                 </li>-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
-               <!--http://webfaisal.azurewebsites.net/DirHtml/About.html-->
+                <!--http://webfaisal.azurewebsites.net/DirHtml/About.html-->
                 <li class="active"><a href="http://webfaisal.azurewebsites.net/DirHtml/signin.html">Sign In <span class="sr-only">(current)</span></a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
 </nav>
 
-<div class="container main-content">
 
-    <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron">
-        <h1 style="text-align: center">Welcome to Project Ethical Approval web</h1>
 
-    </div>
+    <form class="form-signin main-content">
+
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
 
 </div> <!-- /container -->
-
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
